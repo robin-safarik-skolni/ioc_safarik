@@ -35,7 +35,12 @@ Frekvence střídavého proudu pro EMR digitizér se volí často v rozmezí 500
 
 Pro lepší vizualizaci je přiložen obrázek 1.
 
-![Obr. 1 Režim vysílání](vysilani.png)
+<figure>
+    <img src="vysilani.png" alt="Režim vysílání">
+    <figcaption>
+        Obr. 1: Režim vysílání.
+    </figcaption>
+</figure>
 
 ## 2.2 Přijímání
 
@@ -52,7 +57,5 @@ Jak již bylo zmíněno na začátku kapitoly, většina zařízení periodicky 
 Naměřená data se tedy ukládají průběžně pro každou cívku a na konci vysílání a měření ze všech cívek se vypočtou souřadnice pera.
 
 Tento cyklus proběhne ve zlomku sekundy - samotné vysílání trvá pouze v řádu nižších desítek mikrosekund, přijímání taktéž několik mikrosekund a po započtení nutných mezer mezi vysíláním a přijímáním vychází celý cyklus se všemi cívkami přibližně na půl milisekundy ()
-
-
 
 [^2]: EMR = elektromagnetická rezonance
