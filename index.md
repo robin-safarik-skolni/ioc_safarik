@@ -26,10 +26,9 @@ Nyní už se dostáváme ke klíčové součásti zařízení, bez níž by sní
 
 ## 2.1 Vysílání
 
-Aby zařízení mohlo vysílat elektromagnetické vlny, potřebuje vhodnou anténu, přesněji celou mřížku antén.
-Kdyby zařízení obsahovalo pouze jednu anténu, mohlo by pouze detekovat, jestli se stylus nachází v jeho blízkosti. Nemohlo by však snímat polohu pera. K tomu je zapotřebí více antén systematicky umístěných ve dvou směrech - na osách X a Y.
+Pro vysílání elektromagnetických vln je zapotřebí elektricky vodivá smyčka, neboli cívka, kterou prochází elektrický proud. Ten musí být střídavý, jelikož stejnosměrný proud by nerozkmital elektrony a nebylo by možno snímat stylus.
 
-Slovem anténa je myšlena cívka, čili smyčka vodiče, kterou prochází elektrický proud. Ten musí být střídavý, jelikož stejnosměrný proud by nerozkmital elektrony a nebylo by možno snímat stylus.
+Kdyby zařízení obsahovalo pouze jednu cívku, mohlo by pouze detekovat, jestli se stylus nachází v jeho blízkosti. Nemohlo by však snímat polohu pera. K tomu je zapotřebí více cívek systematicky umístěných ve dvou směrech - na osách X a Y.
 
 Frekvence střídavého proudu pro EMR digitizér se volí často v rozmezí 500 až 750 kHz, což je rozumný kompromis přinášející jednak dostatečně vysokou frekvenci na rozkmitání cívky ve stylusu a jednak poměrně nízkou hladinu rušení okolními jevy, projevující se převážně u vyšších frekvencí.
 
@@ -50,12 +49,12 @@ Jak již bylo zmíněno na začátku kapitoly, většina zařízení periodicky 
 
 1. Zvolení aktivní cívky
 2. Spuštění vysílání na dané frekvenci
-3. Vypnutí vysílání a zapnutí měření
+3. Vypnutí vysílání a přepnutí do režimu měření
 4. Vypnutí měření a uložení dat
 5. Opakování cyklu se zbytkem cívek
 
 Naměřená data se tedy ukládají průběžně pro každou cívku a na konci vysílání a měření ze všech cívek se vypočtou souřadnice pera.
 
-Tento cyklus proběhne ve zlomku sekundy - samotné vysílání trvá pouze v řádu nižších desítek mikrosekund, přijímání taktéž několik mikrosekund a po započtení nutných mezer mezi vysíláním a přijímáním vychází celý cyklus se všemi cívkami přibližně na půl milisekundy ()
+Tento cyklus proběhne ve zlomku sekundy - samotné vysílání trvá pouze v řádu nižších desítek mikrosekund, přijímání taktéž několik mikrosekund a po započtení nutných mezer mezi vysíláním a přijímáním vychází celý cyklus se všemi cívkami přibližně na půl milisekundy. Je to však pouze orientační odhad, jelikož zde velice záleží na množství cívek, a tím pádem na velikosti kreslící plochy.
 
 [^2]: EMR = elektromagnetická rezonance
